@@ -1,4 +1,4 @@
-import Income from "./components/income/Income";
+import Income from "./features/income/Income";
 import Counter from "./features/counter/Counter";
 
 
