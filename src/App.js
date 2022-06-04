@@ -1,4 +1,5 @@
 import Income from "./components/income/Income";
+import Counter from "./features/counter/Counter";
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <header>
         <h1 className="text-center">Income and Expanse App</h1>
       </header>
+      <Counter/>
       <Income/>
     </div>
   );

@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Add from './Add';
 import List from './List';
 
 function Income() {
 
-	const incomes = JSON.parse(localStorage.getItem('income'));
-
-	let list = incomes ? Object.values(incomes) : [{}];
+	const [list, setList] = useState([{}]);
 	
-	
+	useEffect(() => {
+		const incomes = JSON.parse(localStorage.getItem('income'));
+		incomes ? setList(Object.values(incomes)) : setList([{}]);
+	},[]);
 	
 	return (
 		<>
