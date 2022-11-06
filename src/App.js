@@ -1,4 +1,4 @@
-import Income from "./features/income/Income";
+import List from "./features/list/list";
 
 function App() {
   return (
@@ -6,7 +6,7 @@ function App() {
       <header>
         <h1 className="text-center">Income and Expanse App</h1>
       </header>
-      <Income />
+      <List />
     </div>
   );
 }
